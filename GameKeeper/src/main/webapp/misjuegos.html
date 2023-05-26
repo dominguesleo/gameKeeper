@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKepper</title>
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/buscador.css">
+    <link rel="stylesheet" href="css/listaJuegoConsola.css">
+    <script src="js/misJuegos.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/GameKeeperLogo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="misjuegos.html">Mis Juegos</a>
+        <a href="misconsolas.html">Mis Consolas</a>
+        <a href="agregarjuego.html">Agregar Juego</a>
+        <a href="agregarconsola.html">Agregar Consola</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+
+    <main class="contenedor-main">
+        <h1>Juegos</h1>
+
+        <div class="contenedor-buscador">
+            <p>Filtrar por:</p>
+            <select class="opcion" id="opcionJuego" tabindex="1">
+                <option value="1" selected >Nombre</option>
+                <option value="2">Formato</option>
+                <option value="3">Consola</option>
+                <option value="4">Estado</option>
+                <option value="5">Valoración</option>
+            </select>
+            <div id="buscarJuego">
+                <input type="text" class="opcion" id="valorJuego" placeholder="Nombre del Juego" tabindex="2">
+            </div>   
+            <button class="boton-buscar" id="botonBusJue" tabindex="3">Buscar</button> <!-- Se agrega funcionalidad con js -->
+        </div>
+
+        <ul class="lista" id=resultadoJuegos></ul>  <!-- Carga los juegos mediante js-->
+    </main>
+
+    <footer>
+        <span>GameKeeper ®</span>
+   </footer>
+   
+</body>
+</html>

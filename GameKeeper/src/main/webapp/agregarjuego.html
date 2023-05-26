@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKepper</title>
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/avisos.css">
+    <script src="js/agregarJuego.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/GameKeeperLogo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="misjuegos.html">Mis Juegos</a>
+        <a href="misconsolas.html">Mis Consolas</a>
+        <a href="agregarjuego.html">Agregar Juego</a>
+        <a href="agregarconsola.html">Agregar Consola</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+
+    <main class="contenedor-main">
+
+        <h1>Agregar Juego</h1>
+
+        <form action="JuegoServlet?id=0" method="post" enctype="multipart/form-data" class="contenedor-general" id="formularioJuego">
+            <fieldset>
+                <legend>Nuevo Juego</legend>
+
+                <ul class="contenedor-datos">
+                    <li class="campo">
+                        <label for="ag-nomJue">Nombre*</label>
+                        <input name="nombre" class="dato" id="ag-nomJue" type="text" placeholder="Nombre del juego" tabindex="1">
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-forJue">Formato*</label>
+                        <select name="formato" class="dato" id="ag-forJue" tabindex="2">
+                            <option value="" disabled selected>Físico / Digital</option>
+                            <option value="Fisico">Físico</option>
+                            <option value="Digital">Digital</option>
+                        </select>
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-consJue">Consola*</label>
+                        <select name="consola" class="dato" id="ag-consJue" tabindex="3">
+                            <option value="" disabled selected>Consola</option>
+                        </select>
+
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-estJue">Estado*</label>
+                        <select name="estado" class="dato" id="ag-estJue" tabindex="4">
+                            <option value="" disabled selected>Deseado/Obtenido/Jugando/Terminado</option>
+                            <option value="Deseado">Deseado</option>
+                            <option value="Obtenido">Obtenido</option>
+                            <option value="Jugando">Jugando</option>
+                            <option value="Terminado">Terminado</option>
+                        </select>
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-ediJue">Edición</label>
+                        <input name="edicion" class="dato" id="ag-ediJue" type="text" placeholder="Edición del juego" tabindex="5">
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-genJue">Género</label>
+                        <input name="genero" class="dato" id="ag-genJue" type="text" placeholder="Género del juego" tabindex="6">
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-fechaJue"> Fecha</label>
+                        <input name="fecha" class="dato" id="ag-fechaJue" type="date" tabindex="7">
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-valJue">Valoración</label>
+                        <select name="valoracion" class="dato" id="ag-valJue" tabindex="8">
+                            <option value=null selected disabled>Valoración</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </li>
+
+                    <li class="campo">
+                        <label for="ag-fotoJue">Foto</label>
+                        <input name="foto" class="dato" id="ag-fotoJue" type="file" tabindex="9">
+                    </li>
+                </ul>
+
+                <div class="contenedor-botones">
+                    <span>* Campos obligatorios</span>
+                    <input class="boton" type="submit" id="ag-juego" value="Aceptar" tabindex="10"> <!-- Se valida mendiante js -->
+                </div>
+                
+            </fieldset>
+        </form>
+        <!-- Se agrega mensaje de validacion mendiante js -->
+    </main>
+
+    <footer>
+        <span>GameKeeper ®</span>
+   </footer>
+
+</body>
+</html>

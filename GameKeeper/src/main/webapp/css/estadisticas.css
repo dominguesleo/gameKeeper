@@ -1,0 +1,31 @@
+
+/* PAGINA PRINCIPAL / index */
+
+.contenedor-estadisticas { /* Contenedor estadisticas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto ;
+    column-gap: 6rem;
+    background-color: var(--primario);
+    border-radius: 1.8rem;
+    width: min(80rem, 95%);
+    margin: 0 auto 3rem auto;
+    padding: 2rem;
+}
+
+.estadistica { /* Distribucion de las estadisticas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.estadistica span { /* Estilo valor de la estadistica */
+    background-color: var(--secundario);
+    color: var(--negro);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 8rem;
+    text-align: center;
+    font-weight: bold;
+}

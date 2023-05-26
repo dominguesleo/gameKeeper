@@ -1,0 +1,155 @@
+:root { /* Paleta de colores */
+    --primario: #1F8A8A;
+    --primarioOscuro: #518282;
+    --secundario: #ffc107;
+    --secundarioOscuro: #f5b800;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris: #333;
+    --rojo: #e73434;
+}
+
+/*GLOBALES*/
+
+html { /* Patron aplicado para hacer uso de rem, logando la equivalencia 1rem = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    background-image: url(../img/fondo.svg);
+    display: flex;
+    flex-direction: column; /* Aplicado para mantener el footer abajo con mucho o poco contenido agregandole "margin-top: auto" */
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1, h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* UTILIDADES */
+
+.centrar { /* Centrar elementos - de momento solo utilizado en botones*/
+    display: flex;
+    justify-content: center;
+}
+.box-shadow { /* Agregar sombra a algun elemento */
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+}
+
+/* BOTONES */
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: end;
+    color: var(--blanco);
+}
+
+.boton {
+    width: 16rem;
+    height: 6rem;
+    background-color: var(--secundario);
+    color: var(--negro);
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: bold;
+    border-radius: .5rem; 
+    border: none;
+    cursor: pointer; 
+}
+
+.boton:hover {
+    background-color: var(--secundarioOscuro);
+}
+
+.boton--eliminar:hover {
+    background-color: var(--rojo);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header img {
+    width: 35rem;
+}
+
+/* NAVEGACION PRINCIPAL */
+
+nav {
+    max-width: 120rem; 
+    width: 98%;
+    margin: 0 auto;
+    background-color: var(--primario);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+}
+
+nav a {   
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;  
+}
+
+nav a:hover { 
+    background-color: var(--secundario);
+    color: var(--negro);
+    border-radius: .7rem;
+}
+
+/* MAIN */
+
+.contenedor-main {  /* Contenedor del main presente en toda la area privada del usuario*/
+    max-width: 160rem; 
+    width: 98%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--blanco);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    border-radius: 1rem;  
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: bold;
+    margin-top: auto; /* Mantine el footer abajo con la configuracion puesta en la etiqueta "body" */
+}

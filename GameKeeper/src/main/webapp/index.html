@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKepper</title>
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/estadisticas.css">
+    <link rel="stylesheet" href="css/listaJuegoConsola.css">
+    <script src="js/index.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/GameKeeperLogo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="misjuegos.html">Mis Juegos</a>
+        <a href="misconsolas.html">Mis Consolas</a>
+        <a href="agregarjuego.html">Agregar Juego</a>
+        <a href="agregarconsola.html">Agregar Consola</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+
+    <main class="contenedor-main">
+
+        <section>
+            <h1>Estadísticas</h1>
+            <ul class="contenedor-estadisticas"> <!-- Carga las estadisticas en cada etiqueta <span> mediante js-->
+                <li class="estadistica">
+                    <h3>Juegos</h3>
+                    <span id="numeroJuegos"></span>
+                </li>
+                <li class="estadistica">
+                    <h3>Consolas</h3>
+                    <span id="numeroConsolas"></span>
+                </li>
+                <li class="estadistica">
+                    <h3>Jugando</h3>
+                    <span id="numeroJugando"></span>
+                </li>
+                <li class="estadistica">
+                    <h3>Terminados</h3>
+                    <span id="numeroTerminados"></span>
+                </li>
+                <li class="estadistica">
+                    <h3>Obtenidos</h3>
+                    <span id="numeroObtenidos"></span>
+                </li>
+                <li class="estadistica">
+                    <h3>Deseados</h3>
+                    <span id="numeroDeseados"></span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Últimos juegos añadidos</h2>
+            <ul class="lista" id="ultimosJuegos"></ul> <!-- Carga los ultimos 6 juegos añadidos mediante js-->
+        </section>
+
+        <section>
+            <h2>Últimas consolas añadidas</h2>
+            <ul class="lista" id="ultimasConsolas"></ul> <!-- Carga las ultimas 6 consolas añadidas mediante js-->
+        </section>
+        
+    </main>
+
+    <footer>
+         <span>GameKeeper ®</span>
+    </footer>
+    
+</body>
+</html>

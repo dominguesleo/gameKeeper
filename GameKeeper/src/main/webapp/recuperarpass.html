@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKepper</title>
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/avisos.css">
+    <script src="js/recuperarpass.js"></script>
+
+</head>
+<body>
+    <header>
+        <a href="login.html">
+            <img src="img/GameKeeperLogo.png" alt="Logotipo" width="350">
+        </a>
+    </header>
+
+    <main class="contenedor-general reducido">
+
+        <form action="UsuarioServlet?opcion=3" method="post" class="contenedor-datos" id="formularioPassword">
+            <fieldset>
+                <legend>Recuperar Contraseña</legend>
+
+                <ul>
+                    <li class="campo">
+                        <label for="mail">Usuario</label>
+                        <input name="correo" class="dato" id="re-mail" type="text" placeholder="Correo Electrónico" tabindex="1">
+                    </li>
+    
+                    <li class="campo">
+                        <label for="password">Nueva contraseña</label>
+                        <input name="password" class="dato" id="re-password" type="password" placeholder="Contraseña" tabindex="2">
+                    </li>
+                </ul>
+
+                <div class="contenedor-botones">
+                    <button class="boton" type="button" onclick="window.history.back()" tabindex="4">Atrás</button>
+                    <input class="boton" id="re-pass" type="submit" value="Aceptar" tabindex="3"> <!-- Se valida mendiante js -->
+                </div>
+                
+            </fieldset>
+        </form>       
+    </main>
+    <!-- Se agrega mensaje de validacion mendiante js -->
+
+    <footer>
+        <span>GameKeeper ®</span>
+   </footer>
+</body>
+</html>

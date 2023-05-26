@@ -1,0 +1,23 @@
+.error { /* Aviso en rojo */
+    background-color: var(--rojo);
+    border-radius: 1.8rem;
+    width: min(90rem, 95%);
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.validado { /* Aviso en amarillo */
+    background-color: var(--secundario);
+    border-radius: 1.8rem;
+    width: min(90rem, 95%);
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mini { /* Adapta el aviso a un formato mas pequeño */
+    width: min(50rem, 95%);
+}

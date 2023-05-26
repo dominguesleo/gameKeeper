@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKepper</title>
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/avisos.css">
+    <script src="js/juego.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/GameKeeperLogo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="misjuegos.html">Mis Juegos</a>
+        <a href="misconsolas.html">Mis Consolas</a>
+        <a href="agregarjuego.html">Agregar Juego</a>
+        <a href="agregarconsola.html">Agregar Consola</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+
+    <main class="contenedor-main">
+        <section class="contenedor-general grande" id="datosJuego">
+
+            <ul class="contenedor-datos juego"> <!-- Se agrega la informacion en cada div mendiante codigo js -->
+                <li class="portada">
+                    <img id="portadaJuego">
+                </li>
+
+                <li class="campo">
+                    <span>Nombre</span>
+                    <div class="dato" id="nombreJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Formato</span>
+                    <div class="dato" id="formatoJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Consola</span>
+                    <div class="dato" id="consolaJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Estado</span>
+                    <div class="dato" id="estadoJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Edición</span>
+                    <div class="dato" id="edicionJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Género</span>
+                    <div class="dato" id="generoJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Fecha</span>
+                    <div class="dato" id="fechaJuego"></div>
+                </li>
+
+                <li class="campo">
+                    <span>Valoración</span>
+                    <div class="dato" id="valoracionJuego"></div>
+                </li>
+            </ul>
+
+            <div class="contenedor-botones">
+                <button class="boton" type="button" onclick="window.history.back()" tabindex="1">Atrás</button>
+                <a href="editarjuego.html" class="boton" tabindex="2">Editar</a>
+                <button class="boton boton--eliminar" type="button" id="eliminarJuego" tabindex="3">Eliminar</button> <!-- Se agrega funcionalidad con js -->
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <span>GameKeeper ®</span>
+   </footer>
+  
+</body>
+</html>
