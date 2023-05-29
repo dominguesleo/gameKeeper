@@ -51,7 +51,7 @@ public class AdminServlet extends HttpServlet {
 	 * Metodo que maneja las peticios POST.
 	 * <ul><li>Obtiene el permiso del Administrador de la sesion, la opcion seleccionada y el Id del usuario donde se ejecutara la accion</li>
 	 * <li>Si la opcion es 1, bloquea al usuario con el id indicado.</li>
-	 * <li>Si la opcion es 2, desbloquea al usuario con el id indicado.</li></ul>
+	 * <li>Si la opcion es 2, desbloquea al usuario con el id indicado.</li>
 	 * <li>Si la opcion es 3, da permisos de administrador al usuario con el id indicado.</li></ul>
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

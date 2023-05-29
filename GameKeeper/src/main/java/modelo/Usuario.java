@@ -364,7 +364,7 @@ public class Usuario {
 	 * <i>Primero se consulta si el usuario existe con el metodo validarDuplicado.</i>
 	 * <ul><li>Devuelve True: Si existe el usuario y se realizo el cambio de password.</li>
 	 * <li>Devuelve False: Si no existe un usuario.</li></ul>
-	 * @throws SQLException
+	 * @throws SQLException <i>Propaga la exepcion hasta el servlet.</i>
 	 */
 	public boolean passwordUpdate() throws SQLException {
 		if(this.validarDuplicado()) {

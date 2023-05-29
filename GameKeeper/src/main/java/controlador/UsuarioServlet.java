@@ -78,7 +78,7 @@ public class UsuarioServlet extends HttpServlet {
 	 * Metodo que maneja las peticios POST.
 	 * <ul><li>Obtiene el id del usuario de la sesion y la opcion seleccionada.</li>
 	 * <li>Si la opcion es 1, registra al usuario y lo redirige a la pagina principal.</li>
-	 * <li>Si la opcion es 2, actualiza los datos del usuario y lo redirige a su perfil.</li></ul>
+	 * <li>Si la opcion es 2, actualiza los datos del usuario y lo redirige a su perfil.</li>
 	 * <li>Si la opcion es 3, permite recuperar la contraseña y lo redirige a login.</li></ul>
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
