@@ -73,7 +73,7 @@ public class DaoUsuario {
 		ps.setString(3, usuario.getMail());
 		ps.setString(4, usuario.getPassword());
 	
-		if (usuario.getFecha().equals("")) { // Validamos los daros opcionales para que sean nulos en la base de datos
+		if (usuario.getFecha().equals("")) { // Validamos los datos opcionales para que sean nulos en la base de datos
 			ps.setNull(5, java.sql.Types.DATE);		
 		}else {
 			ps.setDate(5, java.sql.Date.valueOf(usuario.getFecha()));

@@ -37,7 +37,7 @@ public class UsuarioAdmin extends Usuario {
 	 * @throws SQLException <i>Propaga la exepcion hasta el servlet.</i>
 	 */
 	public void bloquearUsuario(int id) throws SQLException {
-		DaoUsuarioAdmin.getInstance().bloquearDesbloquear(1, id);
+		DaoUsuarioAdmin.getInstance().bloquearDesbloquear(1, id); // El parametro "1" representa la query "bloquear" dentro del metodo del DAO
 	}
 	
 	/**
@@ -46,7 +46,7 @@ public class UsuarioAdmin extends Usuario {
 	 * @throws SQLException <i>Propaga la exepcion hasta el servlet.</i>
 	 */
 	public void desbloquearUsuario(int id) throws SQLException {
-		DaoUsuarioAdmin.getInstance().bloquearDesbloquear(2, id);
+		DaoUsuarioAdmin.getInstance().bloquearDesbloquear(2, id); // El parametro "2" representa la query "desbloquear" dentro del metodo del DAO
 	}
 	
 	/**

@@ -305,7 +305,7 @@ public class Usuario {
 	 * @see controlador.UsuarioServlet
 	 */
 	public void insertar() throws SQLException {
-		DaoUsuario.getInstance().insertarUpdate(this, 1);
+		DaoUsuario.getInstance().insertarUpdate(this, 1); // El parametro "1" activa la query de insercion en el metodo del DAO
 	}
 	
 	/**
@@ -315,7 +315,7 @@ public class Usuario {
 	 * @see controlador.UsuarioServlet
 	 */
 	public void update() throws SQLException {
-		DaoUsuario.getInstance().insertarUpdate(this, 2);
+		DaoUsuario.getInstance().insertarUpdate(this, 2); // El parametro "2" activa la query de actualizar en el metodo del DAO
 	}
 	
 	/**
